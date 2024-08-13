@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import Empresa from './pages/Empresa';
 import Contato from './pages/Contato';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
         </ul>
       </nav>
 
+      <Footer />
+
       {/* Define as rotas da aplicação */}
       <Routes>
         {/* Rota para a página Home */}
@@ -37,6 +40,8 @@ function App() {
         <Route path="/contato" element={<Contato />} />
       </Routes>
     </Router>
+
+    
   );
 }
 
